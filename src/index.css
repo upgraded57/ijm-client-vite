@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "NoirPro";
+  src: url("./assets/fonts/NoirPro-Light.woff2") format("woff2"),
+    url("./assets/fonts/NoirPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NoirPro";
+  src: url("./assets/fonts/NoirPro-Regular.woff2") format("woff2"),
+    url("./assets/fonts/NoirPro-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NoirPro";
+  src: url("./assets/fonts/NoirPro-SemiBold.woff2") format("woff2"),
+    url("./assets/fonts/NoirPro-SemiBold.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NoirPro";
+  src: url("./assets/fonts/NoirPro-Bold.woff2") format("woff2"),
+    url("./assets/fonts/NoirPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "NoirPro", sans-serif;
+  color: #1b1b1b;
+}
+
+p,
+a {
+  font-weight: 400;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.h-text {
+  font-weight: 500;
+  color: #015b6c;
+  font-size: 50px;
+}
+
+.p-text {
+  font-size: 20px;
+  color: #535353;
+}
+
+@media screen and (max-width: 1000px) {
+  .h-text {
+    font-size: 30px;
+  }
+
+  .p-text {
+    font-size: 18px;
+  }
+}

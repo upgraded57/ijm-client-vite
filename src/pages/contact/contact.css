@@ -1,0 +1,26 @@
+.contact_hero {
+  background: linear-gradient(to top, rgba(0, 26, 31, 1), rgba(0, 62, 73, 0.71)),
+    url("https://images.unsplash.com/photo-1507537064587-464384459bb7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.contact_hero::before {
+  content: "";
+  width: 100%;
+  background: #2ad6ff;
+  height: 50px;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+}
+
+.contact_img{
+    background: url("https://images.unsplash.com/photo-1568918460973-fe7f54f82482?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+
+}
