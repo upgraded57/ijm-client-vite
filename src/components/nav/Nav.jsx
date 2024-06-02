@@ -59,7 +59,7 @@ export default function Nav() {
         <img
           src={logo}
           alt="IJM Global Limited Logo"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
         />
       </Link>
       <nav className="hidden md:flex items-center gap-10">
@@ -97,7 +97,7 @@ export default function Nav() {
               <img
                 src={logo}
                 alt="IJM Global Limited Logo"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
             <label htmlFor="nav-toggle" className="text-xl">

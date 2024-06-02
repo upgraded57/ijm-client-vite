@@ -1,13 +1,20 @@
 import "./home.css";
+import CountUp, { useCountUp } from "react-countup";
 
 export default function Home() {
+  useCountUp({
+    ref: "counter",
+    end: 1234567,
+    enableScrollSpy: true,
+    scrollSpyDelay: 1000,
+  });
   const points = [
     {
-      number: "15,700+",
+      number: 15700,
       text: "assets tracked",
     },
     {
-      number: "276+",
+      number: 276,
       text: "assets recovered",
     },
   ];
@@ -22,7 +29,8 @@ export default function Home() {
             <div className="w-full h-[300px] md:h-[550px] flex items-center justify-center">
               <div className="min-w-[60%] p-3 border-2 border-white text-white flex items-center justify-center flex-col">
                 <h1 className="text-[70px] md:text-[85px] lg:text-[100px] font-bold">
-                  {point.number}
+                  {/* {point.number} */}
+                  <CountUp end={point.number} enableScrollSpy />+
                 </h1>
                 <p className="uppercase text-[30px] font-bold">{point.text}</p>
               </div>

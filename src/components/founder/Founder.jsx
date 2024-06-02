@@ -17,7 +17,10 @@ export default function Founder() {
       </h1>
       <div className="flex items-start gap-10 justify-between flex-col md:flex-row">
         <div className="basis-1/2 relative">
-          <div className="founder_img max-w-550px aspect-10/12 border-2 border-green-clr rounded-lg relative">
+          <div
+            data-aos="flip-right"
+            className="founder_img max-w-550px aspect-10/12 border-2 border-green-clr rounded-lg relative"
+          >
             <img
               src={founder_img}
               alt="Ijeoma Mary Chukwu. Founder - IJM Global Limited"
@@ -30,7 +33,11 @@ export default function Founder() {
         <div className="basis-1/2">
           <ul>
             {founder_highlights.map((highlight, idx) => (
-              <li key={idx} className="p-text ml-5 pb-5 list-disc md:list-none">
+              <li
+                data-aos="fade-left"
+                key={idx}
+                className="p-text ml-5 pb-5 list-disc md:list-none"
+              >
                 {highlight}
               </li>
             ))}

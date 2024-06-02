@@ -58,7 +58,7 @@ export default function Footer() {
             <img
               src={logo}
               alt="IJM Global Limited Logo"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
             />
           </div>
         </div>

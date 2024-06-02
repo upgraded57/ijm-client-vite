@@ -53,7 +53,7 @@ export default function Solutions() {
               sol.layout === "normal" ? "md:flex-row-" : "md:flex-row-reverse"
             }`}
           >
-            <div className="basis-1/2">
+            <div data-aos="flip-left" className="basis-1/2">
               <div className="w-full max-h-[250px] md:max-h-none overflow-hidden">
                 <img
                   src={sol.image}
@@ -63,10 +63,15 @@ export default function Solutions() {
               </div>
             </div>
             <div className="basis-1/2 p-5 mb-10 md:mb-0">
-              <h2 className="h-text pb-5">{sol.title}</h2>
+              <h2 data-aos="fade-up" className="h-text pb-5">
+                {sol.title}
+              </h2>
               <ul>
                 {sol.points.map((point, idx) => (
                   <li
+                    data-aos={
+                      sol.layout === "normal" ? "fade-left" : "fade-right"
+                    }
                     key={idx}
                     className="text-lg lg:text-3xl list-disc ml-8 pb-5 text-grey-clr"
                   >
