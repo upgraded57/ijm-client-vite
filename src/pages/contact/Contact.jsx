@@ -46,40 +46,42 @@ export default function ContactPage() {
         </div>
       </div>
 
-      <div className="bg-light-grey-clr px-[4vw] py-10 block md:flex gap-10 my-10">
-        <div className="basis-1/3">
-          <h2 className="text-green-clr text-[30px] md:text-[40px] lg:text-[50px] text-center mb-10">
-            We Are Here
-          </h2>
-          {contactInfos.map((info, idx) => (
-            <p
-              key={idx}
-              className="text-xl font-normal uppercase text-center mb-4"
-            >
-              {info.title}
-              {info.texts.map((text, idx) => (
-                <p
-                  key={idx}
-                  className="text-sm text-grey-clr text-center lowercase"
-                >
-                  {text}
-                </p>
-              ))}
-            </p>
-          ))}
-        </div>
+      <div className="bg-light-grey-clr px-[4vw] py-10  my-10">
+        <div className=" w-full max-w-[1440px] block md:flex gap-10 mx-auto">
+          <div data-aos="fade-right" className="basis-1/3 ">
+            <h2 className="text-green-clr text-[30px] md:text-[40px] lg:text-[50px] text-center mb-10">
+              We Are Here
+            </h2>
+            {contactInfos.map((info, idx) => (
+              <p
+                key={idx}
+                className="text-xl font-normal uppercase text-center mb-4"
+              >
+                {info.title}
+                {info.texts.map((text, idx) => (
+                  <p
+                    key={idx}
+                    className="text-sm text-grey-clr text-center lowercase"
+                  >
+                    {text}
+                  </p>
+                ))}
+              </p>
+            ))}
+          </div>
 
-        <div className="basis-2/3">
-          <div className="w-full min-h-[350px] h-full border-[6px] border-white">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.119693920329!2d3.357552275087456!3d6.632053293362374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9395423999b5%3A0xc75150a81c7cfb61!2s426%20Oluwadamilola%20Fasade%20St%2C%20Isheri%2C%20Ikeja%20101233%2C%20Lagos!5e0!3m2!1sen!2sng!4v1716402796394!5m2!1sen!2sng"
-              width="100%"
-              height="100%"
-              style={{ minHeight: "350px" }}
-              allowfullscreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <div data-aos="fade-left" className="basis-2/3">
+            <div className="w-full min-h-[350px] h-full border-[6px] border-white">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.119693920329!2d3.357552275087456!3d6.632053293362374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9395423999b5%3A0xc75150a81c7cfb61!2s426%20Oluwadamilola%20Fasade%20St%2C%20Isheri%2C%20Ikeja%20101233%2C%20Lagos!5e0!3m2!1sen!2sng!4v1716402796394!5m2!1sen!2sng"
+                width="100%"
+                height="100%"
+                style={{ minHeight: "350px" }}
+                allowfullscreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>

@@ -66,7 +66,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="px-[4vw] mb-10 py-10">
+    <section className="px-[4vw] mb-10 py-10  w-full max-w-[1440px] mx-auto">
       <h1 className="h-text text-grey-clr text-center uppercase">
         testimonials
       </h1>

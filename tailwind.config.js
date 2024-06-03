@@ -12,7 +12,7 @@ module.exports = {
         "green-clr": "#015B6C",
         "blue-clr": "#2AD6FF",
         "black-clr": "#1B1B1B",
-        "yellow-clr": "F8EE00",
+        "yellow-clr": "#F8EE00",
         "grey-clr": "#535353",
         "light-grey-clr": "#E9ECEC",
       },

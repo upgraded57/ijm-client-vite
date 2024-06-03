@@ -11,7 +11,7 @@ export default function Founder() {
     "A founder of the NGO - Daughter of Valor - where she helps to rehabilitates and shelter survivors of abusive marriages and their children",
   ];
   return (
-    <section className="px-[4vw] mb-10 pt-10">
+    <section className="px-[4vw] mb-10 pt-10 w-full max-w-[1440px] mx-auto overflow-hidden">
       <h1 className="h-text text-grey-clr text-center uppercase mb-10">
         meet the founder
       </h1>

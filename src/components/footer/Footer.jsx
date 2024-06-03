@@ -49,10 +49,10 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="py-10 px-[4vw] block md:flex items-start">
+      <footer className="py-10 px-[4vw] block md:flex items-start  w-full max-w-[1440px] mx-auto">
         <div className="basis-2/5 mb-10">
           <div
-            to="/"
+            data-aos="fade-up"
             className="w-[150px] h-[30px] md:w-[210px] md:h-[38px] relative"
           >
             <img
@@ -65,10 +65,13 @@ export default function Footer() {
         <div className="basis-3/5 block md:flex justify-between items-start text-grey-clr">
           {footerLinks.map((footerLink, idx) => (
             <div key={idx} className="basis-1/4">
-              <p className="font-[500] text-[18px] mb-5">{footerLink.title}</p>
+              <p data-aos="fade-up" className="font-[500] text-[18px] mb-5">
+                {footerLink.title}
+              </p>
               {footerLink.paths &&
                 footerLink.paths.map((path, idx) => (
                   <Link
+                    data-aos="fade-up"
                     key={idx}
                     to={path.path}
                     target={footerLink.title === "Social" ? "_blank" : "_self"}
@@ -80,7 +83,11 @@ export default function Footer() {
 
               {footerLink.addresses &&
                 footerLink.addresses.map((address, idx) => (
-                  <p key={idx} className="text-sm text-grey-clr mb-3">
+                  <p
+                    data-aos="fade-up"
+                    key={idx}
+                    className="text-sm text-grey-clr mb-3"
+                  >
                     {address}
                   </p>
                 ))}

@@ -43,7 +43,7 @@ export default function Solutions() {
     },
   ];
   return (
-    <section className="px-[4vw] mb-10 pt-10">
+    <section className="px-[4vw] mb-10 pt-10  w-full max-w-[1440px] mx-auto">
       <h1 className="h-text text-center uppercase">our solutions</h1>
       <div className="rounded-2xl overflow-hidden w-full">
         {solutions.map((sol, idx) => (
@@ -53,7 +53,7 @@ export default function Solutions() {
               sol.layout === "normal" ? "md:flex-row-" : "md:flex-row-reverse"
             }`}
           >
-            <div data-aos="flip-left" className="basis-1/2">
+            <div data-aos="zoom-in" className="basis-1/2">
               <div className="w-full max-h-[250px] md:max-h-none overflow-hidden">
                 <img
                   src={sol.image}

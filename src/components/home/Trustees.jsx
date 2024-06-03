@@ -28,7 +28,7 @@ export default function Home() {
           <div key={idx} className={`basis-1/2 trustee_${idx + 1}`}>
             <div className="w-full h-[300px] md:h-[550px] flex items-center justify-center">
               <div className="min-w-[60%] p-3 border-2 border-white text-white flex items-center justify-center flex-col">
-                <h1 className="text-[70px] md:text-[85px] lg:text-[100px] font-bold">
+                <h1 className="text-[70px] md:text-[85px] lg:text-[100px] font-bold text-yellow-clr">
                   {/* {point.number} */}
                   <CountUp end={point.number} enableScrollSpy />+
                 </h1>

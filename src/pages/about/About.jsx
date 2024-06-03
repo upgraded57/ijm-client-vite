@@ -59,35 +59,40 @@ export default function AboutPage() {
         ))}
       </div>
 
-      <section className="px-[4vw] mt-10">
-        <h1 className="h-text uppercase text-center mb-5">about our company</h1>
-        <p data-aos="fade-right" className="p-text">
-          IJM Global Limited is a tech security company that innovates, develops
-          and deploys solutions anchored around Tracking and IOT technology to
-          solve the daily organizational, community and individual challenges
-          associated with fleet management, community security management,
-          emergency challenges, SOS response for individuals and organizations.
-        </p>
-      </section>
-
-      <section className="px-[4vw] block md:flex gap-10 my-10 pt-10">
-        <div className="our_core_values basis-1/2 w-full aspect-[2/1] rounded-xl flex p-10 items-center justify-center">
-          <h1 className="text-blue-clr uppercase text-3xl text-center font-bold tracking-wider">
-            our core values
+      <div className=" w-full max-w-[1440px] mx-auto">
+        <section className="px-[4vw] mt-10">
+          <h1 className="h-text uppercase text-center mb-5">
+            about our company
           </h1>
-        </div>
-        <div className="basis-1/2 grid grid-cols-2 gap-6 place-content-center mt-6 md:mt-0">
-          {values.map((value, idx) => (
-            <div
-              data-aos="flip-left"
-              key={idx}
-              className="w-full flex items-center justify-center rounded-lg border-2 aspect-[2/1] hover:text-white hover:border-0 hover:bg-blue-clr transition-all"
-            >
-              <p className="text-lg text-center p-5">{value}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+          <p data-aos="fade-up" className="p-text">
+            IJM Global Limited is a tech security company that innovates,
+            develops and deploys solutions anchored around Tracking and IOT
+            technology to solve the daily organizational, community and
+            individual challenges associated with fleet management, community
+            security management, emergency challenges, SOS response for
+            individuals and organizations.
+          </p>
+        </section>
+
+        <section className="px-[4vw] block md:flex gap-10 my-10 pt-10">
+          <div className="our_core_values basis-1/2 w-full aspect-[2/1] rounded-xl flex p-10 items-center justify-center">
+            <h1 className="text-blue-clr uppercase text-3xl text-center font-bold tracking-wider">
+              our core values
+            </h1>
+          </div>
+          <div className="basis-1/2 grid grid-cols-2 gap-6 place-content-center mt-6 md:mt-0">
+            {values.map((value, idx) => (
+              <div
+                data-aos="flip-left"
+                key={idx}
+                className="w-full flex items-center justify-center rounded-lg border-2 aspect-[2/1] hover:text-white hover:border-0 hover:bg-blue-clr transition-all"
+              >
+                <p className="text-lg text-center p-5">{value}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
 
       <Founder />
       <Testimonials />
