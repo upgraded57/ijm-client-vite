@@ -8,6 +8,7 @@ function App() {
   useEffect(() => {
     Aos.init({
       duration: 1000,
+      disable: "mobile",
     });
   }, []);
   const router = createBrowserRouter(routes);

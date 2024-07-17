@@ -85,9 +85,11 @@ export default function AboutPage() {
               <div
                 data-aos="flip-left"
                 key={idx}
-                className="w-full flex items-center justify-center rounded-lg border-2 aspect-[2/1] hover:text-white hover:border-0 hover:bg-blue-clr transition-all"
+                className="w-full flex items-stretch justify-center rounded-lg border-2 aspect-[2/1] hover:text-white hover:border-0 hover:bg-blue-clr transition-all"
               >
-                <p className="text-lg text-center p-5">{value}</p>
+                <p className="text-lg text-center p-5 w-full h-full flex items-center justify-center">
+                  {value}
+                </p>
               </div>
             ))}
           </div>

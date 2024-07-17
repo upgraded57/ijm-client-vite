@@ -6,52 +6,33 @@ export default function Testimonials() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const testimonials = [
     {
-      user: "John Doe",
-      position: "Creative Manager, Sample Company",
+      user: "Mr. Hut",
       words:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Spytrac equipt my dispatch motor bikes with quality trackers and even updated to better tracking devices for free. They  were also actively engaged in the recovery of one of the moto bikes in an attempted theft . I would recommend their professional and effective customer service.",
     },
     {
-      user: "Jane Doe",
-      position: "Creative Manager, Sample Company",
+      user: "General Shola - The Bismack",
       words:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "A reliable,efficient and time-conscious Logistic company  and also  a reliable tracking company with a formidable security conscious. The company is highly  recommended to track all kinds of automobiles. And bound to render a variety of other forms of tracking services in the wider world 🌎 .",
     },
     {
-      user: "Thomas Wayne",
-      position: "Creative Manager, Sample Company",
+      user: "Ayodele Mustafa",
       words:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Best place for perfect tracking, flexible control and efficient management of your fleet. If you value your mobile properties like Boat, SUV, smart Car and construction equipments, you have to SPYTRAC them. Let SPYTRAC secure your home and offices with cameras, electronics locking systems and security alert system. Track your Children and your spouse in this Kidnapping Era. For more information on their various telematics security and care services just contact SPYTRAC!",
     },
     {
-      user: "Connor Rotherm",
-      position: "Creative Manager, Sample Company",
-      words:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      user: "Ezra Akintonde",
+      words: "Trusted company in Nigeria providing tracking devices.",
     },
     {
-      user: "Felix Spline",
-      position: "Creative Manager, Sample Company",
+      user: "Ogochukwu Ukachi",
       words:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "The app is really good. User friendly interface. Generally a wonderful experience since i have been using the app.",
     },
     {
-      user: "Henry Birch",
-      position: "Creative Manager, Sample Company",
+      user: "Joshua Ilabor",
       words:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    },
-    {
-      user: "Paul Rooney",
-      position: "Creative Manager, Sample Company",
-      words:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    },
-    {
-      user: "Francis Caeser",
-      position: "Creative Manager, Sample Company",
-      words:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "They are a reliable tracking company. They track all kinds of automobiles. And render a variety of other forms of tracking too",
     },
   ];
 
@@ -81,7 +62,7 @@ export default function Testimonials() {
           </h3>
           <p
             data-aos="fade-right"
-            className="p-text text-sm md:text-[18px] mb-3"
+            className="p-text text-sm md:text-[18px] mb-3 leading-8"
           >
             {testimonials[currentTestimonial].words}
           </p>
@@ -92,9 +73,6 @@ export default function Testimonials() {
           >
             {testimonials[currentTestimonial].user}
           </h5>
-          <p data-aos="fade-up" className="text-xs text-grey-clr font-300">
-            {testimonials[currentTestimonial].position}
-          </p>
           <div className="flex w-full items-center justify-end mt-5">
             <div className="flex items-center gap-5">
               <BsArrowLeft

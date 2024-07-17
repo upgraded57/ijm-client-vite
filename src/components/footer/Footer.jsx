@@ -42,7 +42,6 @@ export default function Footer() {
         "+234 903 783 8141",
         "+234 906 295 1504",
         "426 A Oluwadamilola Fasade Street, Omole Phase 1, Lagos",
-        "Opening hours: 8am - 5pm; Mon - Fri",
       ],
     },
   ];
@@ -65,7 +64,7 @@ export default function Footer() {
         <div className="basis-3/5 block md:flex justify-between items-start text-grey-clr">
           {footerLinks.map((footerLink, idx) => (
             <div key={idx} className="basis-1/4">
-              <p data-aos="fade-up" className="font-[500] text-[18px] mb-5">
+              <p data-aos="fade-up" className="font-[400] text-[18px] mb-5">
                 {footerLink.title}
               </p>
               {footerLink.paths &&
@@ -75,7 +74,7 @@ export default function Footer() {
                     key={idx}
                     to={path.path}
                     target={footerLink.title === "Social" ? "_blank" : "_self"}
-                    className="block text-sm text-grey-clr mb-2 hover:underline max-w-max"
+                    className="block p-text text-grey-clr mb-2 hover:underline max-w-max"
                   >
                     {path.title}
                   </Link>
@@ -86,7 +85,7 @@ export default function Footer() {
                   <p
                     data-aos="fade-up"
                     key={idx}
-                    className="text-sm text-grey-clr mb-3"
+                    className="p-text text-grey-clr mb-3"
                   >
                     {address}
                   </p>
@@ -95,7 +94,7 @@ export default function Footer() {
           ))}
         </div>
       </footer>
-      <p className="text-center text-grey-clr text-sm my-5">
+      <p className="text-center text-grey-clr p-text my-5">
         Copyright 2024 IJM Global Limited. All Rights Reserved.
       </p>
     </>

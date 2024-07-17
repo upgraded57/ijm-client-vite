@@ -4,7 +4,7 @@ import spystore_logo from "@/src/assets/images/spystore_logo.png";
 import vettme_logo from "@/src/assets/images/vettme_logo.png";
 import call4help_logo from "@/src/assets/images/call4help_logo.png";
 import rescueme_logo from "@/src/assets/images/rescueme_logo.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { HiMiniBars3 } from "react-icons/hi2";
 import { FiChevronDown } from "react-icons/fi";
 import { IoIosCloseCircleOutline } from "react-icons/io";
@@ -53,7 +53,7 @@ export default function Nav() {
   return (
     <header className="w-full h-[50px] md:h-[70px] px-[4vw]  shadow-md">
       <div className="w-full h-full max-w-[1440px] mx-auto flex justify-between items-center">
-        <Link
+        <NavLink
           to="/"
           className="w-[150px] h-[30px] md:w-[210px] md:h-[38px] relative"
         >
@@ -62,28 +62,28 @@ export default function Nav() {
             alt="IJM Global Limited Logo"
             className="w-full h-full object-contain"
           />
-        </Link>
+        </NavLink>
         <nav className="hidden md:flex items-center gap-10">
           {navlinks.map((link, idx) =>
             link.path === "/service" ? (
               <span
                 key={idx}
-                className="services text-sm flex gap-2 items-center cursor-pointer"
+                className="services p-text flex gap-2 items-center cursor-pointer"
               >
                 <p>Services</p>
                 <FiChevronDown />
               </span>
             ) : (
-              <Link
+              <NavLink
                 key={idx}
                 to={link.path}
-                className={`font-normal text-sm hover:underline ${
+                className={`font-[300] p-text hover:underline ${
                   link.path === "/contact" &&
                   "btn bg-green-clr text-white hover:bg-green-clr hover:no-underline"
                 }`}
               >
                 {link.title}
-              </Link>
+              </NavLink>
             )
           )}
         </nav>
@@ -109,22 +109,22 @@ export default function Nav() {
               link.path === "/service" ? (
                 <span
                   key={idx}
-                  className="services text-sm flex gap-2 items-center cursor-pointer uppercase px-[4vw] py-4 mb-5 border-b text-[30px] "
+                  className="services p-text flex gap-2 items-center cursor-pointer uppercase px-[4vw] py-4 mb-5 border-b text-[30px] "
                 >
                   <p>Services</p>
                   <FiChevronDown />
                 </span>
               ) : (
-                <Link
+                <NavLink
                   key={idx}
                   to={link.path}
-                  className={`font-normal text-sm hover:underline block uppercase px-[4vw] py-4 mb-5 border-b text-[30px] ${
+                  className={`font-normal p-text hover:underline block uppercase px-[4vw] py-4 mb-5 border-b text-[30px] ${
                     link.path === "/contact" &&
                     "flex my-5 btn w-full border-2 bg-transparent border-green-clr text-green-clr hover:bg-green-clr hover:text-white hover:no-underline"
                   }`}
                 >
                   {link.title}
-                </Link>
+                </NavLink>
               )
             )}
           </div>

@@ -28,8 +28,8 @@ export default function Clientele() {
   ];
   return (
     <section className="px-[4vw] mb-10  w-full max-w-[1440px] mx-auto overflow-x-hidden">
-      <h1 className="h-text text-grey-clr text-center ">
-        Some of our Clientele
+      <h1 className="h-text text-grey-clr text-center uppercase">
+        Our Clientele
       </h1>
       <div className="carousel w-full gap-10 mt-10">
         {clientImgs.map((image, idx) => (

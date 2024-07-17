@@ -12,7 +12,7 @@ export default function Hero() {
             <h1 className="text-[46px] text-green-clr md:text-[54px] lg:text-[64px] xl:text-[80px] font-medium leading-none pb-8">
               Where Security Meets Happiness
             </h1>
-            <h3 className="text-[18px] lg:text-[30px] text-black-clr">
+            <h3 className="text-lg lg:text-2xl text-grey-clr">
               Number One Tech Security Company in Nigeria for Fleet Management,
               Personnel Identity Verification, Security Management Solution and
               Security Gadgets.

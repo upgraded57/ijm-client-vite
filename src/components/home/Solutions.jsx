@@ -43,42 +43,42 @@ export default function Solutions() {
     },
   ];
   return (
-    <section className="px-[4vw] mb-10 pt-10  w-full max-w-[1440px] mx-auto">
-      <h1 className="h-text text-center uppercase">our solutions</h1>
-      <div className="rounded-2xl overflow-hidden w-full">
+    <section className="px-[4vw] mb-10 md:pb-10 pt-10  w-full max-w-[1440px] mx-auto">
+      <h1 className="h-text text-center uppercase md:mb-10">our solutions</h1>
+      <div className="max-w-screen-lg mx-auto w-full">
         {solutions.map((sol, idx) => (
           <div
             key={idx}
-            className={`flex flex-col md:flex-row items-start md:items-center bg-light-grey-clr ${
-              sol.layout === "normal" ? "md:flex-row-" : "md:flex-row-reverse"
+            className={`flex flex-col-reverse md:flex-row md:items-center overflow-hidden gap-4 md:gap-10 mb-10 p-4 md:p-0 rounded-3xl shadow-lg md:shadow-none ${
+              sol.layout === "reverse" && "md:flex-row-reverse"
             }`}
           >
-            <div data-aos="zoom-in" className="basis-1/2">
-              <div className="w-full max-h-[250px] md:max-h-none overflow-hidden">
-                <img
-                  src={sol.image}
-                  alt={sol.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-            <div className="basis-1/2 p-5 mb-10 md:mb-0">
-              <h2 data-aos="fade-up" className="h-text pb-5">
-                {sol.title}
-              </h2>
+            <div
+              className="basis-1/2 mb-4 md:mb-0"
+              data-aos={sol.layout !== "reverse" ? "fade-right" : "fade-left"}
+            >
+              <h3 className="text-2xl text-grey-clr mb-4">{sol.title}</h3>
               <ul>
                 {sol.points.map((point, idx) => (
                   <li
-                    data-aos={
-                      sol.layout === "normal" ? "fade-left" : "fade-right"
-                    }
                     key={idx}
-                    className="text-lg lg:text-3xl list-disc ml-8 pb-5 text-grey-clr"
+                    className="p-text flex items-center gap-5 pl-4 md:pl-0"
                   >
+                    <div className="w-1 aspect-square rounded-full bg-grey-clr"></div>
                     {point}
                   </li>
                 ))}
               </ul>
+            </div>
+            <div
+              className="basis-1/2 rounded-xl shadow-lg overflow-hidden aspect-[2/1.2] md:aspect-[2/1.5]"
+              data-aos={sol.layout !== "reverse" ? "fade-left" : "fade-right"}
+            >
+              <img
+                src={sol.image}
+                alt={sol.title}
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         ))}

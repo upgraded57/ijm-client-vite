@@ -20,7 +20,7 @@ export default function Intro() {
           <div className="basis-1/2">
             <div className="w-full max-h-[500px] aspect-square flex items-center justify-center overflow-hidden">
               <img
-                data-aos="flip-left"
+                data-aos="fade-left"
                 src={ijm_brands}
                 alt="IJM Global Limited Brands"
                 className="w-full h-full object-contain"

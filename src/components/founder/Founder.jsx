@@ -18,7 +18,7 @@ export default function Founder() {
       <div className="flex items-start gap-10 justify-between flex-col md:flex-row">
         <div className="basis-1/2 relative">
           <div
-            data-aos="flip-right"
+            data-aos="fade-right"
             className="founder_img max-w-550px aspect-10/12 border-2 border-green-clr rounded-lg relative"
           >
             <img

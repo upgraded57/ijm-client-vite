@@ -22,14 +22,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "NoirPro";
-  src: url("./assets/fonts/NoirPro-Bold.woff2") format("woff2"),
-    url("./assets/fonts/NoirPro-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -42,13 +34,18 @@
 
 body {
   font-family: "NoirPro", sans-serif;
-  color: #1b1b1b;
+  color: #535353;
   width: 100vw;
   overflow-x: hidden;
 }
 
 p,
-a {
+a,
+li {
+  font-weight: 300;
+}
+
+a.active {
   font-weight: 400;
 }
 
@@ -59,22 +56,21 @@ a {
 }
 
 .h-text {
-  font-weight: 500;
+  font-weight: 500 !important;
   color: #015b6c;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .p-text {
-  font-size: 20px;
-  color: #535353;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 1000px) {
   .h-text {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .p-text {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
