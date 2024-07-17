@@ -12,6 +12,20 @@
     url("../../assets/images/assets_tracking_img.png");
 }
 
+.carousel-container {
+  min-width: max-content;
+  animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .intro {
   background-image: url("../../assets/images/hero_bg.png");
 }
