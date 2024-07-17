@@ -53,10 +53,7 @@ export default function Solutions() {
               sol.layout === "reverse" && "md:flex-row-reverse"
             }`}
           >
-            <div
-              className="basis-1/2 mb-4 md:mb-0"
-              data-aos={sol.layout !== "reverse" ? "fade-right" : "fade-left"}
-            >
+            <div className="basis-1/2 mb-4 md:mb-0">
               <h3 className="text-2xl text-grey-clr mb-4">{sol.title}</h3>
               <ul>
                 {sol.points.map((point, idx) => (

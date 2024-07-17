@@ -53,24 +53,15 @@ export default function Testimonials() {
       </h1>
       <div className="block md:flex items-center gap-10 my-10">
         <div className="basis-2/3">
-          <h3
-            data-aos="fade-right"
-            className="text-xl md:text-3xl text-green-clr font-normal mb-10"
-          >
+          <h3 className="text-xl md:text-3xl text-green-clr font-normal mb-10">
             Find out what our past and current satisfied clients have to say
             about how we&apos;ve served them
           </h3>
-          <p
-            data-aos="fade-right"
-            className="p-text text-sm md:text-[18px] mb-3 leading-8"
-          >
+          <p className="p-text text-sm md:text-[18px] mb-3 leading-8">
             {testimonials[currentTestimonial].words}
           </p>
 
-          <h5
-            data-aos="fade-up"
-            className="text-xl text-green-clr font-semibold uppercase"
-          >
+          <h5 className="text-xl text-green-clr font-semibold uppercase">
             {testimonials[currentTestimonial].user}
           </h5>
           <div className="flex w-full items-center justify-end mt-5">

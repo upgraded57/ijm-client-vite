@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "aos": "^2.3.4",
     "daisyui": "^4.11.1",
     "react": "^18.2.0",
     "react-countup": "^6.5.3",

@@ -50,10 +50,7 @@ export default function Footer() {
     <>
       <footer className="py-10 px-[4vw] block md:flex items-start  w-full max-w-screen-xl mx-auto">
         <div className="basis-2/5 mb-10">
-          <div
-            data-aos="fade-up"
-            className="w-[150px] h-[30px] md:w-[210px] md:h-[38px] relative"
-          >
+          <div className="w-[150px] h-[30px] md:w-[210px] md:h-[38px] relative">
             <img
               src={logo}
               alt="IJM Global Limited Logo"
@@ -64,13 +61,10 @@ export default function Footer() {
         <div className="basis-3/5 block md:flex justify-between items-start text-grey-clr">
           {footerLinks.map((footerLink, idx) => (
             <div key={idx} className="basis-1/4 mb-5 md:mb-0">
-              <p data-aos="fade-up" className="font-[400] text-lg md:mb-5">
-                {footerLink.title}
-              </p>
+              <p className="font-[400] text-lg md:mb-5">{footerLink.title}</p>
               {footerLink.paths &&
                 footerLink.paths.map((path, idx) => (
                   <Link
-                    data-aos="fade-up"
                     key={idx}
                     to={path.path}
                     target={footerLink.title === "Social" ? "_blank" : "_self"}
@@ -82,11 +76,7 @@ export default function Footer() {
 
               {footerLink.addresses &&
                 footerLink.addresses.map((address, idx) => (
-                  <p
-                    data-aos="fade-up"
-                    key={idx}
-                    className="p-text text-grey-clr mb-3"
-                  >
+                  <p key={idx} className="p-text text-grey-clr mb-3">
                     {address}
                   </p>
                 ))}

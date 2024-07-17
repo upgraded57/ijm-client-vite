@@ -42,7 +42,6 @@ export default function AboutPage() {
       <div className="flex justify-center px-[4vw] items-center md:items-stretch gap-10 flex-col md:flex-row relative -translate-y-10">
         {cards.map((card, idx) => (
           <div
-            data-aos="fade-up"
             key={idx}
             className="p-6 md:p-10 rounded-xl border-2 border-blue-clr shadow-md bg-white max-w-[500px]"
           >
@@ -64,7 +63,7 @@ export default function AboutPage() {
           <h1 className="h-text uppercase text-center mb-5">
             about our company
           </h1>
-          <p data-aos="fade-up" className="p-text">
+          <p className="p-text">
             IJM Global Limited is a tech security company that innovates,
             develops and deploys solutions anchored around Tracking and IOT
             technology to solve the daily organizational, community and
@@ -83,7 +82,6 @@ export default function AboutPage() {
           <div className="basis-1/2 grid grid-cols-2 gap-6 place-content-center mt-6 md:mt-0">
             {values.map((value, idx) => (
               <div
-                data-aos="flip-left"
                 key={idx}
                 className="w-full flex items-stretch justify-center rounded-lg border-2 aspect-[2/1] hover:text-white hover:border-0 hover:bg-blue-clr transition-all"
               >

@@ -30,11 +30,7 @@ export default function Founder() {
         <div className="basis-1/2">
           <ul>
             {founder_highlights.map((highlight, idx) => (
-              <li
-                data-aos="fade-left"
-                key={idx}
-                className="p-text ml-5 pb-5 list-disc md:list-none"
-              >
+              <li key={idx} className="p-text ml-5 pb-5 list-disc md:list-none">
                 {highlight}
               </li>
             ))}

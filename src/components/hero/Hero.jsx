@@ -5,10 +5,7 @@ export default function Hero() {
     <>
       <div className="hero px-[4vw] py-[60px] mb-10">
         <div className=" w-full max-w-screen-xl mx-auto flex flex-col md:flex-row gap-10 md:gap-0 items-center justify-between">
-          <div
-            data-aos="fade-right"
-            className="basis-1/2 text-center md:text-left"
-          >
+          <div className="basis-1/2 text-center md:text-left">
             <h1 className="text-[46px] text-green-clr md:text-[54px] lg:text-[64px] xl:text-[80px] font-medium leading-none pb-8">
               Where Security Meets Happiness
             </h1>

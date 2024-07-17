@@ -8,7 +8,7 @@ export default function Intro() {
         <h1 className="px-[4vw] h-text text-center uppercase">who are we?</h1>
         <div className="flex flex-col md:flex-row gap-10 items-center justify-between py-10">
           <div className="basis-1/2">
-            <p data-aos="fade-right" className="p-text">
+            <p className="p-text">
               IJM Global Limited is a tech security company that innovates,
               develops and deploys solutions anchored around Tracking and IOT
               technology to solve the daily organizational, community and
