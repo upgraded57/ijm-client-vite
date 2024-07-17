@@ -47,7 +47,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="px-[4vw] mb-10 py-10  w-full max-w-[1440px] mx-auto">
+    <section className="px-[4vw] mb-10 py-10  w-full max-w-screen-lg mx-auto">
       <h1 className="h-text text-grey-clr text-center uppercase">
         testimonials
       </h1>
@@ -90,10 +90,7 @@ export default function Testimonials() {
           </div>
         </div>
         <div className="hidden md:block basis-1/3">
-          <div
-            data-aos="fade-left"
-            className="w-full relative flex items-center justify-center"
-          >
+          <div className="w-full relative flex items-center justify-center">
             <img
               src={testimonials_img}
               alt="Images of testimonials"

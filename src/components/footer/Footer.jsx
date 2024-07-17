@@ -48,7 +48,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="py-10 px-[4vw] block md:flex items-start  w-full max-w-[1440px] mx-auto">
+      <footer className="py-10 px-[4vw] block md:flex items-start  w-full max-w-screen-xl mx-auto">
         <div className="basis-2/5 mb-10">
           <div
             data-aos="fade-up"
@@ -63,8 +63,8 @@ export default function Footer() {
         </div>
         <div className="basis-3/5 block md:flex justify-between items-start text-grey-clr">
           {footerLinks.map((footerLink, idx) => (
-            <div key={idx} className="basis-1/4">
-              <p data-aos="fade-up" className="font-[400] text-[18px] mb-5">
+            <div key={idx} className="basis-1/4 mb-5 md:mb-0">
+              <p data-aos="fade-up" className="font-[400] text-lg md:mb-5">
                 {footerLink.title}
               </p>
               {footerLink.paths &&

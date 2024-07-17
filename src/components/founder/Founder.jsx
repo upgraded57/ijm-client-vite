@@ -11,16 +11,13 @@ export default function Founder() {
     "A founder of the NGO - Daughter of Valor - where she helps to rehabilitates and shelter survivors of abusive marriages and their children",
   ];
   return (
-    <section className="px-[4vw] mb-10 pt-10 w-full max-w-[1440px] mx-auto overflow-hidden">
+    <section className="px-[4vw] mb-10 pt-10 w-full max-w-screen-lg mx-auto overflow-hidden">
       <h1 className="h-text text-grey-clr text-center uppercase mb-10">
         meet the founder
       </h1>
       <div className="flex items-start gap-10 justify-between flex-col md:flex-row">
-        <div className="basis-1/2 relative">
-          <div
-            data-aos="fade-right"
-            className="founder_img max-w-550px aspect-10/12 border-2 border-green-clr rounded-lg relative"
-          >
+        <div className="basis-1/2 flex justify-center relative">
+          <div className="founder_img max-w-[400px] aspect-10/12 border-2 border-green-clr rounded-lg relative">
             <img
               src={founder_img}
               alt="Ijeoma Mary Chukwu. Founder - IJM Global Limited"

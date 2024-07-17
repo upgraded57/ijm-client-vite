@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <>
       <div className="hero px-[4vw] py-[60px] mb-10">
-        <div className=" w-full max-w-[1440px] mx-auto flex flex-col md:flex-row gap-10 md:gap-0 items-center justify-between">
+        <div className=" w-full max-w-screen-xl mx-auto flex flex-col md:flex-row gap-10 md:gap-0 items-center justify-between">
           <div
             data-aos="fade-right"
             className="basis-1/2 text-center md:text-left"
@@ -18,10 +18,7 @@ export default function Hero() {
               Security Gadgets.
             </h3>
           </div>
-          <div
-            data-aos="fade-left"
-            className="basis-1/2 flex items-center justify-center md:justify-end"
-          >
+          <div className="basis-1/2 flex items-center justify-center md:justify-end">
             <div className="w-[340px] h-[420px] lg:w-[460px] lg:h-[560px] relative">
               <img
                 src={hero_img}

@@ -3,8 +3,8 @@ import ijm_brands from "@/src/assets/images/ijm_brands.png";
 
 export default function Intro() {
   return (
-    <section className="intro my-10 py-10 px-[4vw]">
-      <div className=" w-full max-w-[1440px] mx-auto">
+    <section className="my-10 py-10 px-[4vw]">
+      <div className=" w-full max-w-screen-lg mx-auto">
         <h1 className="px-[4vw] h-text text-center uppercase">who are we?</h1>
         <div className="flex flex-col md:flex-row gap-10 items-center justify-between py-10">
           <div className="basis-1/2">
@@ -20,7 +20,6 @@ export default function Intro() {
           <div className="basis-1/2">
             <div className="w-full max-h-[500px] aspect-square flex items-center justify-center overflow-hidden">
               <img
-                data-aos="fade-left"
                 src={ijm_brands}
                 alt="IJM Global Limited Brands"
                 className="w-full h-full object-contain"

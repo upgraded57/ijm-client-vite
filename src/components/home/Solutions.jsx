@@ -70,10 +70,7 @@ export default function Solutions() {
                 ))}
               </ul>
             </div>
-            <div
-              className="basis-1/2 rounded-xl shadow-lg overflow-hidden aspect-[2/1.2] md:aspect-[2/1.5]"
-              data-aos={sol.layout !== "reverse" ? "fade-left" : "fade-right"}
-            >
+            <div className="basis-1/2 rounded-xl shadow-lg overflow-hidden aspect-[2/1.2] md:aspect-[2/1.5]">
               <img
                 src={sol.image}
                 alt={sol.title}
