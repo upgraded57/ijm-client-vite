@@ -18,7 +18,7 @@ export default function Intro() {
             </p>
           </div>
           <div className="basis-1/2">
-            <div className="w-full max-h-[500px] aspect-square flex items-center justify-center overflow-hidden">
+            <div className="w-full max-h-[400px] aspect-square flex items-center justify-center overflow-hidden">
               <img
                 src={ijm_brands}
                 alt="IJM Global Limited Brands"

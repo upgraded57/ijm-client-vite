@@ -53,7 +53,7 @@ export default function Solutions() {
               sol.layout === "reverse" && "md:flex-row-reverse"
             }`}
           >
-            <div className="basis-1/2 mb-4 md:mb-0">
+            <div className="basis-1/2 mb-4 md:mb-0 md:flex flex-col items-center justify-center">
               <h3 className="text-2xl text-grey-clr mb-4">{sol.title}</h3>
               <ul>
                 {sol.points.map((point, idx) => (
@@ -67,7 +67,7 @@ export default function Solutions() {
                 ))}
               </ul>
             </div>
-            <div className="basis-1/2 rounded-xl shadow-lg overflow-hidden aspect-[2/1.2] md:aspect-[2/1.5]">
+            <div className="basis-1/2 rounded-xl shadow-lg overflow-hidden aspect-[2/1.2] md:aspect-[4/3] max-w-[400px]">
               <img
                 src={sol.image}
                 alt={sol.title}
