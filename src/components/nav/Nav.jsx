@@ -1,15 +1,17 @@
+import { useState } from "react";
 import logo from "@/src/assets/images/ijmlogo.svg";
 import spytrac_logo from "@/src/assets/images/spytrac_logo.png";
 import spystore_logo from "@/src/assets/images/spystore_logo.png";
 import vettme_logo from "@/src/assets/images/vettme_logo.png";
 import call4help_logo from "@/src/assets/images/call4help_logo.png";
-import rescueme_logo from "@/src/assets/images/rescueme_logo.png";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { HiMiniBars3 } from "react-icons/hi2";
-import { FiChevronDown } from "react-icons/fi";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 
 export default function Nav() {
+  const [navOpen, setNavOpen] = useState(false);
+  const [mobileNav, setMobileNav] = useState(false);
   const navlinks = [
     {
       path: "/",
@@ -22,22 +24,22 @@ export default function Nav() {
         {
           path: "/service/spytrac",
           image: spytrac_logo,
+          name: "Spytrac",
         },
         {
           path: "/service/spystore",
           image: spystore_logo,
+          name: "Spystore",
         },
         {
           path: "/service/vettme",
           image: vettme_logo,
+          name: "Vettme",
         },
         {
           path: "/service/call4help",
           image: call4help_logo,
-        },
-        {
-          path: "/service/rescueme",
-          image: rescueme_logo,
+          name: "Spytrac",
         },
       ],
     },
@@ -50,8 +52,9 @@ export default function Nav() {
       title: "Contact",
     },
   ];
+
   return (
-    <header className="w-full h-[50px] md:h-[70px] px-[4vw]  shadow-md">
+    <header className="w-full h-[50px] md:h-[70px] px-[4vw] relative shadow-md">
       <div className="w-full h-full max-w-[1440px] mx-auto flex justify-between items-center">
         <NavLink
           to="/"
@@ -69,9 +72,10 @@ export default function Nav() {
               <span
                 key={idx}
                 className="services p-text flex gap-2 items-center cursor-pointer"
+                onClick={() => setNavOpen((prev) => !prev)}
               >
                 <p>Services</p>
-                <FiChevronDown />
+                {!navOpen ? <FiChevronDown /> : <FiChevronUp />}
               </span>
             ) : (
               <NavLink
@@ -87,6 +91,26 @@ export default function Nav() {
             )
           )}
         </nav>
+
+        <div
+          className={`navOptions absolute top-[80px] right-[4vw] ${
+            !navOpen ? "hidden" : "flex"
+          } items-stretch justify-center gap-4 flex-wrap max-w-screen-md px-10 py-4 backdrop-blur-md z-10 rounded-lg`}
+        >
+          {navlinks.map(
+            (link) =>
+              link.subpaths &&
+              link.subpaths.map((path, idx) => (
+                <Link
+                  key={idx}
+                  to={path.path}
+                  className="px-10 py-4 bg-white rounded-md overflow-hidden flex items-center justify-center shadow-md w-full max-w-[180px]"
+                >
+                  <img src={path.image} alt={path.path} className="w-[100px]" />
+                </Link>
+              ))
+          )}
+        </div>
         <label htmlFor="nav-toggle" className="md:hidden">
           <HiMiniBars3 className="text-2xl cursor-pointer" />
         </label>
@@ -107,18 +131,29 @@ export default function Nav() {
             </div>
             {navlinks.map((link, idx) =>
               link.path === "/service" ? (
-                <span
-                  key={idx}
-                  className="services p-text flex gap-2 items-center cursor-pointer uppercase px-[4vw] py-4 mb-5 border-b text-[30px] "
-                >
-                  <p>Services</p>
-                  <FiChevronDown />
-                </span>
+                <div>
+                  <span
+                    key={idx}
+                    onClick={() => setMobileNav((prev) => !prev)}
+                    className="services p-text flex gap-2 items-center cursor-pointer uppercase px-[4vw] py-4 border-b text-[30px] "
+                  >
+                    <p className="font-normal">Services</p>
+                    <FiChevronDown />
+                  </span>
+                  <div className={`${mobileNav ? "block" : "hidden"} ml-10`}>
+                    {link.subpaths &&
+                      link.subpaths.map((path, idx) => (
+                        <Link to={path.path} key={idx} className="my-10 block">
+                          <img src={path.image} alt="" className="w-[80px]" />
+                        </Link>
+                      ))}
+                  </div>
+                </div>
               ) : (
                 <NavLink
                   key={idx}
                   to={link.path}
-                  className={`font-normal p-text hover:underline block uppercase px-[4vw] py-4 mb-5 border-b text-[30px] ${
+                  className={`font-normal p-text hover:underline block uppercase px-[4vw] py-4 border-b text-[30px] ${
                     link.path === "/contact" &&
                     "flex my-5 btn w-full border-2 bg-transparent border-green-clr text-green-clr hover:bg-green-clr hover:text-white hover:no-underline"
                   }`}

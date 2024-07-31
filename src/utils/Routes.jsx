@@ -3,7 +3,6 @@ import AboutPage from "../pages/about/About";
 import ContactPage from "../pages/contact/Contact";
 import Home from "../pages/home/Home";
 import Call4help from "../pages/service/call4help";
-import Rescueme from "../pages/service/rescueme";
 import Spystore from "../pages/service/spystore";
 import Spytrac from "../pages/service/spytrac";
 import Vettme from "../pages/service/vettme";
@@ -57,14 +56,7 @@ export const routes = [
       </Suspense>
     ),
   },
-  {
-    path: "service/rescueme",
-    element: (
-      <Suspense fallback={<p>Loading...</p>}>
-        <Rescueme />
-      </Suspense>
-    ),
-  },
+
   {
     path: "service/call4help",
     element: (
