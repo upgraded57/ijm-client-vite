@@ -43,9 +43,9 @@ export default function Solutions() {
     },
   ];
   return (
-    <section className="px-[4vw] mb-10 md:pb-10 pt-10  w-full max-w-[1440px] mx-auto">
+    <section className="px-[4vw] mb-10 md:pb-10 pt-10  w-full max-w-screel-lg mx-auto">
       <h1 className="h-text text-center uppercase md:mb-10">our solutions</h1>
-      <div className="max-w-screen-lg mx-auto w-full">
+      <div className="mx-auto w-full">
         {solutions.map((sol, idx) => (
           <div
             key={idx}

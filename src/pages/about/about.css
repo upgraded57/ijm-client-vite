@@ -25,6 +25,18 @@
   background-repeat: no-repeat;
 }
 
+.impact1 {
+  background: url("../../assets/images/impact1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.impact2 {
+  background: url("../../assets/images/impact2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media screen and (max-width: 768px) {
   .about_hero::before {
     height: 30px;
