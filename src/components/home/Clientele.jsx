@@ -1,16 +1,16 @@
 import "./home.css";
 
-import clientele_img_1 from "@/src/assets/images/clientele_img_1.png";
-import clientele_img_2 from "@/src/assets/images/clientele_img_2.png";
-import clientele_img_3 from "@/src/assets/images/clientele_img_3.png";
-import clientele_img_4 from "@/src/assets/images/clientele_img_4.png";
-import clientele_img_5 from "@/src/assets/images/clientele_img_5.png";
-import clientele_img_6 from "@/src/assets/images/clientele_img_6.png";
-import clientele_img_7 from "@/src/assets/images/clientele_img_7.png";
-import clientele_img_8 from "@/src/assets/images/clientele_img_8.png";
-import clientele_img_9 from "@/src/assets/images/clientele_img_9.png";
-import clientele_img_10 from "@/src/assets/images/clientele_img_10.png";
-import clientele_img_11 from "@/src/assets/images/clientele_img_11.png";
+import clientele_img_1 from "@/src/assets/images/clientele_img_1.webp";
+import clientele_img_2 from "@/src/assets/images/clientele_img_2.webp";
+import clientele_img_3 from "@/src/assets/images/clientele_img_3.webp";
+import clientele_img_4 from "@/src/assets/images/clientele_img_4.webp";
+import clientele_img_5 from "@/src/assets/images/clientele_img_5.webp";
+import clientele_img_6 from "@/src/assets/images/clientele_img_6.webp";
+import clientele_img_7 from "@/src/assets/images/clientele_img_7.webp";
+import clientele_img_8 from "@/src/assets/images/clientele_img_8.webp";
+import clientele_img_9 from "@/src/assets/images/clientele_img_9.webp";
+import clientele_img_10 from "@/src/assets/images/clientele_img_10.webp";
+import clientele_img_11 from "@/src/assets/images/clientele_img_11.webp";
 
 export default function Clientele() {
   const clientImgs = [

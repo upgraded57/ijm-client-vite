@@ -1,6 +1,6 @@
 import "../home/home.css";
 
-import founder_img from "@/src/assets/images/founder_img.jpg";
+import founder_img from "@/src/assets/images/founder_img.webp";
 
 export default function Founder() {
   const founder_highlights = [

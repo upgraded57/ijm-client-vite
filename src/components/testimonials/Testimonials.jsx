@@ -1,4 +1,4 @@
-import testimonials_img from "@/src/assets/images/testimonials_img.png";
+import testimonials_img from "@/src/assets/images/testimonials_img.webp";
 import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import { useState } from "react";
 

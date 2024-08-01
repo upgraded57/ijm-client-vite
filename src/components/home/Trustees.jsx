@@ -30,7 +30,7 @@ export default function Home() {
               <div className="min-w-[250px] p-3 border-2 border-white text-white flex items-center justify-center flex-col rounded-lg">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-clr">
                   {/* {point.number} */}
-                  <CountUp end={point.number} enableScrollSpy />+
+                  <CountUp end={point.number} enableScrollSpy={true} />+
                 </h1>
                 <p className="uppercase text-lg font-[400]">{point.text}</p>
               </div>

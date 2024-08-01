@@ -1,9 +1,9 @@
 import { useState } from "react";
 import logo from "@/src/assets/images/ijmlogo.svg";
-import spytrac_logo from "@/src/assets/images/spytrac_logo.png";
-import spystore_logo from "@/src/assets/images/spystore_logo.png";
-import vettme_logo from "@/src/assets/images/vettme_logo.png";
-import call4help_logo from "@/src/assets/images/call4help_logo.png";
+import spytrac_logo from "@/src/assets/images/spytrac_logo.webp";
+import spystore_logo from "@/src/assets/images/spystore_logo.webp";
+import vettme_logo from "@/src/assets/images/vettme_logo.webp";
+import call4help_logo from "@/src/assets/images/call4help_logo.webp";
 import { Link, NavLink } from "react-router-dom";
 import { HiMiniBars3 } from "react-icons/hi2";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";

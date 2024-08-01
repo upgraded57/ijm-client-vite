@@ -19,20 +19,20 @@
 
 .our_core_values {
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1)),
-    url("../../assets/images/values_img.png");
+    url("../../assets/images/values_img.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .impact1 {
-  background: url("../../assets/images/impact1.png");
+  background: url("../../assets/images/impact1.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .impact2 {
-  background: url("../../assets/images/impact2.png");
+  background: url("../../assets/images/impact2.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }

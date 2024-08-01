@@ -1,6 +1,6 @@
-import fleet_img_img from "@/src/assets/images/fleet_mgt_img.png";
-import vettme_img from "@/src/assets/images/vettme_img.png";
-import security_procurement_img from "@/src/assets/images/security_procurement_img.png";
+import fleet_img_img from "@/src/assets/images/fleet_mgt_img.webp";
+import vettme_img from "@/src/assets/images/vettme_img.webp";
+import security_procurement_img from "@/src/assets/images/security_procurement_img.webp";
 
 export default function Solutions() {
   const solutions = [

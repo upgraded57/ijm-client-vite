@@ -9,7 +9,7 @@
 
 .trustee {
   background-image: linear-gradient(to top, transparent, #011445),
-    url("../../assets/images/assets_tracking_img.png");
+    url("../../assets/images/assets_tracking_img.webp");
 }
 
 .carousel-container {
@@ -27,11 +27,11 @@
 }
 
 .intro {
-  background-image: url("../../assets/images/hero_bg.png");
+  background-image: url("../../assets/images/hero_bg.webp");
 }
 
 .request_a_meeting {
-  background-image: url("../../assets/images/grid_bg.png");
+  background-image: url("../../assets/images/grid_bg.webp");
 }
 
 .founder_img::before {

@@ -1,5 +1,5 @@
 import "./home.css";
-import ijm_brands from "@/src/assets/images/ijm_brands.png";
+import ijm_brands from "@/src/assets/images/ijm_brands.webp";
 
 export default function Intro() {
   return (

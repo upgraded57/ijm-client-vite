@@ -1,5 +1,5 @@
 import "./hero.css";
-import hero_img from "@/src/assets/images/hero_img.png";
+import hero_img from "@/src/assets/images/hero_img.webp";
 export default function Hero() {
   return (
     <>

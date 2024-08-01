@@ -3,17 +3,17 @@ import CountUp, { useCountUp } from "react-countup";
 import Nav from "../../components/nav/Nav";
 import vision_icon from "@/src/assets/images/vision_icon.svg";
 import mission_icon from "@/src/assets/images/mission_icon.svg";
-import vettmeImg from "@/src/assets/images/vettmeimg.png";
-import spytracImg from "@/src/assets/images/spytracimg.png";
-import spystoreImg from "@/src/assets/images/spystoreimg.png";
-import ProblemImg1 from "@/src/assets/images/HomeInsecurityImg.png";
-import ProblemImg2 from "@/src/assets/images/CommunityInsecurityImg.png";
-import ProblemImg3 from "@/src/assets/images/OrganizationalInsecurityImg.png";
-import Person1Img from "@/src/assets/images/person1.jpg";
-import Person2Img from "@/src/assets/images/person2.jpg";
-import Person3Img from "@/src/assets/images/person3.jpg";
-import Person4Img from "@/src/assets/images/person4.jpg";
-import mapImg from "@/src/assets/images/reachImg.png";
+import vettmeImg from "@/src/assets/images/vettmeimg.webp";
+import spytracImg from "@/src/assets/images/spytracimg.webp";
+import spystoreImg from "@/src/assets/images/spystoreimg.webp";
+import ProblemImg1 from "@/src/assets/images/HomeInsecurityImg.webp";
+import ProblemImg2 from "@/src/assets/images/CommunityInsecurityImg.webp";
+import ProblemImg3 from "@/src/assets/images/OrganizationalInsecurityImg.webp";
+import Person1Img from "@/src/assets/images/person1.webp";
+import Person2Img from "@/src/assets/images/person2.webp";
+import Person3Img from "@/src/assets/images/person3.webp";
+import Person4Img from "@/src/assets/images/person4.webp";
+import mapImg from "@/src/assets/images/reachImg.webp";
 import Testimonials from "@/src/components/testimonials/Testimonials";
 import Footer from "@/src/components/footer/Footer";
 import { Link } from "react-router-dom";
@@ -277,7 +277,7 @@ export default function AboutPage() {
                           ? traction.digit
                           : Math.floor(traction.digit / 1000)
                       }
-                      enableScrollSpy
+                      enableScrollSpy={true}
                     />
                     {traction.digit < 500 ? "+" : "k+"}
                   </h2>

@@ -77,7 +77,7 @@ export default function ContactPage() {
                 width="100%"
                 height="100%"
                 style={{ minHeight: "350px" }}
-                allowfullscreen
+                allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>

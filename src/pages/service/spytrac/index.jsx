@@ -216,7 +216,8 @@ export default function Spytrac() {
           <div className="flex flex-col md:flex-row items-center justfy-between gap-6 md:gap-20 py-4 md:py-0 my-10 md:my-6 ">
             <div className="basis-1/2">
               <h3 className="text-2xl font-semibold mb-3">
-                Sign up and get rewarded with a free 3600 health check
+                Sign up and get rewarded with a free 360<sup>0</sup> health
+                check
               </h3>
               <div className="w-full md:hidden py-3">
                 <img src={offerImg} alt="Spytrac 360 degrees vehicle check" />

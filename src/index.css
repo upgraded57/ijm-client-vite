@@ -22,6 +22,33 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Arima Madurai";
+  src: url("./assets/fonts/ArimaMadurai-Medium.woff2") format("woff2"),
+    url("./assets/fonts/ArimaMadurai-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Arima Madurai";
+  src: url("./assets/fonts/ArimaMadurai-Regular.woff2") format("woff2"),
+    url("./assets/fonts/ArimaMadurai-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Arima Madurai";
+  src: url("./assets/fonts/ArimaMadurai-Bold.woff2") format("woff2"),
+    url("./assets/fonts/ArimaMadurai-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
