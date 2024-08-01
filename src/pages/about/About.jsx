@@ -215,7 +215,7 @@ export default function AboutPage() {
                 />
 
                 <h3 className="text-2xl">{service.title}</h3>
-                <p className="text-body">{service.text}</p>
+                <p className="p-text">{service.text}</p>
                 <Link
                   to={service.path}
                   className="btn font-normal bg-transparent mt-4 border-2 border-green-clr text-green-clr hover:text-white hover:border-transparent hover:bg-green-clr"
@@ -246,7 +246,7 @@ export default function AboutPage() {
                 <h3 className="text-xl mb-2">{problem.title}</h3>
                 <ul>
                   {problem.points.map((point, idx) => (
-                    <li key={idx} className="text-body list-disc ml-6">
+                    <li key={idx} className="p-text list-disc ml-6">
                       {point}
                     </li>
                   ))}

@@ -6,6 +6,7 @@ import Call4help from "../pages/service/call4help";
 import Spystore from "../pages/service/spystore";
 import Spytrac from "../pages/service/spytrac";
 import Vettme from "../pages/service/vettme";
+import NotFound from "../pages/not-found/not-found";
 
 export const routes = [
   {
@@ -62,6 +63,15 @@ export const routes = [
     element: (
       <Suspense fallback={<p>Loading...</p>}>
         <Call4help />
+      </Suspense>
+    ),
+  },
+
+  {
+    path: "/*",
+    element: (
+      <Suspense fallback={<p>Loading...</p>}>
+        <NotFound />
       </Suspense>
     ),
   },

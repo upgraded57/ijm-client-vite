@@ -131,9 +131,8 @@ export default function Nav() {
             </div>
             {navlinks.map((link, idx) =>
               link.path === "/service" ? (
-                <div>
+                <div key={idx}>
                   <span
-                    key={idx}
                     onClick={() => setMobileNav((prev) => !prev)}
                     className="services p-text flex gap-2 items-center cursor-pointer uppercase px-[4vw] py-4 border-b text-[30px] "
                   >
