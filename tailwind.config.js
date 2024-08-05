@@ -15,6 +15,8 @@ module.exports = {
         "yellow-clr": "#F8EE00",
         "grey-clr": "#535353",
         "light-grey-clr": "#E9ECEC",
+        "red-clr": "#FF4444",
+        "red-soft-clr": "#FFF3F3",
       },
     },
   },

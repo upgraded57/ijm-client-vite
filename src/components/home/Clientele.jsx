@@ -27,7 +27,7 @@ export default function Clientele() {
     clientele_img_11,
   ];
   return (
-    <section className="px-[4vw] mb-10  w-full max-w-screen-xl mx-auto overflow-x-hidden">
+    <section className="px-[4vw] mb-10  w-full max-w-screen-lg mx-auto overflow-x-hidden">
       <h1 className="h-text text-grey-clr text-center uppercase">
         Our Clientele
       </h1>

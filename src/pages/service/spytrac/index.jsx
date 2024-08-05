@@ -1,4 +1,6 @@
 import Nav from "@/src/components/nav/Nav";
+import playStoreIcon from "@/src/assets/images/playstoreicon.webp";
+import appStoreIcon from "@/src/assets/images/appstoreicon.webp";
 import lgBanner from "@/src/assets/images/banner.webp";
 import smBanner1 from "@/src/assets/images/banner1.webp";
 import smBanner2 from "@/src/assets/images/banner2.webp";
@@ -18,19 +20,19 @@ export default function Spytrac() {
     {
       image: featureImg1,
       title: "Real-time GPS tracking",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      text: "Experience unparalleled precision and reliability with Spytrac, he leading platform for real-time GPS tracking. Unlock the power of real-time GPS tracking with Spytrac. Sign up now to experience enhanced safety, efficiency, and peace of mind.",
       layout: "normal",
     },
     {
       image: featureImg2,
       title: "Detailed vehicle status report",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      text: "Stay informed and in control with Spytrac, the leading app for detailed vehicle status reports. Designed for fleet managers, individual vehicle owners, and businesses, Spytrac provides real-time insights into vehicle performance, location, and health, ensuring optimal operation and peace of mind.",
       layout: "reverse",
     },
     {
       image: featureImg3,
       title: "Maintenance Reminder",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      text: "Ensure your assets are always in top condition with Spytrac's Maintenance Reminder feature. Designed to streamline maintenance scheduling and management, Spytrac helps you avoid costly repairs and downtime by keeping you informed about upcoming maintenance tasks.",
       layout: "normal",
     },
   ];
@@ -74,11 +76,23 @@ export default function Spytrac() {
               All-in-One Fleet Management Solution
             </h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Transform your fleet management with Spytrac, the app that puts
+              you in control. Sign up today and experience the benefits of a
+              smarter, more efficient fleet operation.
             </p>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <img
+              src={playStoreIcon}
+              alt="Get the Spytrac app on Google Play Store"
+              className="w-[150px]"
+            />
+            <img
+              src={appStoreIcon}
+              alt="Get the Spytrac app on Apple App Store"
+              className="w-[150px]"
+            />
           </div>
           <div className="hidden md:block w-full max-w-screen-lg">
             <img src={lgBanner} alt="Banner" />
@@ -89,7 +103,7 @@ export default function Spytrac() {
           </div>
         </div>
 
-        <section className="max-w-screen-md mx-auto rounded-xl shadow-lg p-4 border-[1px] bg-white flex flex-col md:flex-row items-center justify-center gap-5 my-10">
+        <section className="max-w-screen-md rounded-xl shadow-lg mx-[4vw] md:mx-auto p-4 border-[1px] bg-white flex flex-col md:flex-row items-center justify-center gap-5 my-10">
           <div className="basis-1/2 w-full rounded-md overflow-hidden">
             <img
               src={controlImg}
@@ -101,11 +115,10 @@ export default function Spytrac() {
             <h3 className="text-2xl font-medium mb-4">
               Take control of all your vehicles
             </h3>
+
             <p className="p-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
+              Start your fleet management journey with Spytrac today and
+              discover our cutting-edge intelligent vehicle tracking technology.
             </p>
           </div>
         </section>
@@ -137,16 +150,17 @@ export default function Spytrac() {
               Your Personal Fleet Management Assistance
             </h3>
             <p className="p-text text-balance">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              The premier personal fleet management assistant designed to
+              streamline and optimize your vehicle tracking and management
+              needs.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-between gap-10 ">
+          <div className="grid grid-cols-1 md:grid-cols-3 items-stretch justify-between gap-10">
             {values.map((value, idx) => (
               <div
                 key={idx}
-                className="max-w-[390px] border-[1px] w-full shadow-md rounded-md text-center flex flex-col items-center justify-center p-10 gap-6"
+                className="max-w-[390px] border-[1px] w-full rounded-md text-center flex flex-col items-center justify-center p-10 gap-6 hover:scale-105 hover:shadow-md transition-transform"
               >
                 <span className="text-4xl" style={{ color: value.iconColor }}>
                   {value.icon}
@@ -166,8 +180,7 @@ export default function Spytrac() {
               There is a plan for every fleet size
             </h3>
             <p className="p-text text-balance">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Check out our product catalog here
             </p>
           </div>
 
@@ -181,8 +194,8 @@ export default function Spytrac() {
                 Get Started in few easy steps
               </h3>
               <p className="p-text text-balance">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
+                Join countless satisfied users who trust Spytrac for their
+                vehicle tracking needs
               </p>
 
               <div className="flex flex-col md:flex-row-reverse items-center gap-4 md:gap-20 my-8">
@@ -205,8 +218,17 @@ export default function Spytrac() {
                 </div>
               </div>
 
-              <div className="btn btn-wide rounded-full bg-green-clr text-white hover:text-white hover:bg-green-clr">
-                Contact Sales
+              <div className="flex justify-center md:pt-6 items-center gap-2">
+                <img
+                  src={playStoreIcon}
+                  alt="Get the Spytrac app on Google Play Store"
+                  className="w-[150px]"
+                />
+                <img
+                  src={appStoreIcon}
+                  alt="Get the Spytrac app on Apple App Store"
+                  className="w-[150px]"
+                />
               </div>
             </div>
           </div>

@@ -19,10 +19,8 @@ export default function Home() {
     },
   ];
   return (
-    <section className="py-10 md:py-0 md:mb-10 max-w-screen-lg mx-auto">
-      <h1 className="px-[4vw] h-text text-center uppercase mb-4">
-        trusted by brands
-      </h1>
+    <section className="py-10 md:py-0 md:mb-10 max-w-screen-lg mx-auto px-[4vw]">
+      <h1 className="h-text text-center uppercase mb-4">trusted by brands</h1>
       <div className="trustee block md:flex items-center justify-center flex-col gap-10 md:flex-row lg:rounded-xl overflow-hidden py-10">
         {points.map((point, idx) => (
           <div key={idx} className=" py-6">
