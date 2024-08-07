@@ -1,9 +1,5 @@
 import Nav from "@/src/components/nav/Nav";
 import banner from "@/src/assets/images/vettme_banner.webp";
-import feature1img from "@/src/assets/images/feature1img.webp";
-import feature2img from "@/src/assets/images/feature2img.webp";
-import feature3img from "@/src/assets/images/feature3img.webp";
-import feature4img from "@/src/assets/images/feature4img.webp";
 import personnelImg from "@/src/assets/images/personnel.webp";
 import step1img from "@/src/assets/images/step1img.webp";
 import step2img from "@/src/assets/images/step2img.webp";
@@ -21,20 +17,24 @@ export default function Vettme() {
 
   const features = [
     {
-      title: "document verification",
-      image: feature1img,
+      title: " Comprehensive Background Checks",
+      text: "Our app provides detailed verification reports for all types of personnel, including domestic workers, teachers, and corporate employees. Access criminal records, employment history, education verification, and more, all in one place",
     },
     {
-      title: "background checks",
-      image: feature2img,
+      title: "User-Friendly Interface",
+      text: "Navigate effortlessly through our intuitive platform, designed to provide quick and easy access to essential verification information",
     },
     {
-      title: "identity verification",
-      image: feature3img,
+      title: "Secure and Confidential",
+      text: "Your data security is our top priority. VettMe employs advanced encryption and security measures to protect your information and ensure confidentiality throughout the verification process",
     },
     {
-      title: "online security/privacy check",
-      image: feature4img,
+      title: "Fast and Accurate Results",
+      text: "Get reliable and accurate verification results quickly, enabling you to make confident hiring decisions without delay",
+    },
+    {
+      title: "All-in-One Solution",
+      text: "VettMe is the only app you need for all personnel verification requirements, including KYC compliance for customer onboarding",
     },
   ];
 
@@ -170,36 +170,32 @@ export default function Vettme() {
             />
           </div>
         </div>
+      </div>
 
-        <section className="mb-[100px]" id="about">
-          <div className="md:text-center">
-            <h1 className="v-text-regular text-3xl md:text-5xl mb-4">
-              One <span className=" text-red-clr">Application</span>, Everything{" "}
-              <span className=" text-red-clr">Verification</span>{" "}
-            </h1>
-          </div>
+      <section className="mb-[100px] px-[4vw]" id="about">
+        <div className="md:text-center">
+          <h1 className="v-text-regular text-3xl md:text-5xl mb-4">
+            One <span className=" text-red-clr">Application</span>, Everything{" "}
+            <span className=" text-red-clr">Verification</span>{" "}
+          </h1>
+        </div>
 
-          <div className="md:grid grid-cols-5 gap-4 mt-10">
-            {features.map((feature, idx) => (
-              <div
-                key={idx}
-                className={`w-full max-h-[300px] rounded-lg overflow-hidden relative bg-black mb-4 md:mb-0 vettme-feature-img-${
-                  idx + 1
-                }`}
-              >
-                <img
-                  src={feature.image}
-                  alt={feature.title}
-                  className="w-full h-full object-cover opacity-60 peer hover:opacity-100 transition-opacity"
-                />
-                <span className="invisible peer-hover:visible absolute top-2 left-2 rounded-lg bg-red-clr border-white border-2 px-2 py-1 uppercase text-white font-semibold pointer-events-none">
-                  {feature.title}
-                </span>
-              </div>
-            ))}
-          </div>
-        </section>
+        <div className="carousel gap-5 w-full p-10">
+          {features.map((feature, idx) => (
+            <div
+              key={idx}
+              className={`vettme-feature${
+                idx + 1
+              }img block carousel-item shadow-lg w-[280px] aspect-[2/3] rounded-lg p-3`}
+            >
+              <h3 className="text-lg font-semibold mb-3">{feature.title}</h3>
+              <p className="p-text text-sm">{feature.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
+      <div className="w-full max-w-screen-lg mx-auto px-[4vw]">
         <section className="mb-[100px] ">
           <div className="md:flex items-center gap-10">
             <div className="hidden md:block basis-2/5">

@@ -27,14 +27,14 @@ export default function Nav() {
           name: "Spytrac",
         },
         {
-          path: "/service/spystore",
-          image: spystore_logo,
-          name: "Spystore",
-        },
-        {
           path: "/service/vettme",
           image: vettme_logo,
           name: "Vettme",
+        },
+        {
+          path: "/service/spystore",
+          image: spystore_logo,
+          name: "Spystore",
         },
         {
           path: "/service/call4help",

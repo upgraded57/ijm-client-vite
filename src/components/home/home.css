@@ -33,15 +33,3 @@
 .request_a_meeting {
   background-image: url("../../assets/images/grid_bg.webp");
 }
-
-.founder_img::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  top: 10px;
-  left: 10px;
-  height: 100%;
-  background: #015b6c;
-  border-radius: 8px;
-  z-index: -1;
-}
