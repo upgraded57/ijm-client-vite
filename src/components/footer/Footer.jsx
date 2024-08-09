@@ -18,7 +18,6 @@ export default function Footer() {
         { path: "/service/spystore", title: "Spystore" },
         { path: "/service/call4help", title: "Call4Help" },
         { path: "/service/vettme", title: "VettMe" },
-        { path: "/service/rescueme", title: "RescueMe" },
       ],
     },
     {

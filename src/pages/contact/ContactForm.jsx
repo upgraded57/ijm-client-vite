@@ -3,7 +3,13 @@ export default function ContactForm() {
     e.preventDefault();
     const messageData = Object.fromEntries(new FormData(e.target));
 
-    console.log(messageData);
+    const subject = encodeURIComponent("IJM Global Limited Client Message");
+    const body = encodeURIComponent(messageData.message);
+    window.location.href =
+      "mailto:Tech-support@ijmgloballimited.com?subject=" +
+      subject +
+      "&body=" +
+      body;
   };
 
   return (
@@ -13,8 +19,9 @@ export default function ContactForm() {
           <p className="text-sm text-grey-clr uppercase">Full Name</p>
           <input
             type="text"
-            name="full_name"
+            name="name"
             id="full_name"
+            required
             className="input bg-light-grey-clr w-full"
           />
         </label>
@@ -26,6 +33,7 @@ export default function ContactForm() {
             type="email"
             name="email"
             id="email"
+            required
             className="input bg-light-grey-clr w-full"
           />
         </label>
@@ -36,7 +44,7 @@ export default function ContactForm() {
           <input
             type="tel"
             inputMode="numeric"
-            name="phone"
+            name="phone_number"
             id="phone"
             className="input bg-light-grey-clr w-full"
           />
@@ -48,6 +56,7 @@ export default function ContactForm() {
           <textarea
             name="message"
             id="message"
+            required
             className="textarea resize-none bg-light-grey-clr w-full"
           />
         </label>

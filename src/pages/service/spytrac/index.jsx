@@ -59,8 +59,8 @@ export default function Spytrac() {
   ];
 
   const sendMail = () => {
-    var subject = encodeURIComponent("Spytrac enquiry");
-    var body = encodeURIComponent(
+    const subject = encodeURIComponent("Spytrac enquiry");
+    const body = encodeURIComponent(
       "Good day. I'll like to enquire about the pricing of Spytrac service. My name is ..."
     );
     window.location.href =

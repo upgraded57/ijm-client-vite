@@ -15,12 +15,19 @@ export default function Waitlist({ setQ }) {
         {
           method: "POST",
           body: JSON.stringify(data),
+          headers: {
+            "Content-Type": "application/json",
+          },
         }
       );
 
-      const result = await res.json();
-
-      if (result) return alert("Your information has been saved.");
+      const resData = await res.json();
+      if (res.ok) return alert("Your information has been saved.");
+      if (!res.ok) {
+        return alert(
+          resData.message || "Your information could not be saved. Please retry"
+        );
+      }
     } catch (error) {
       return alert("Your information could not be saved. Please retry");
     }

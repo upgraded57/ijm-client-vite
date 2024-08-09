@@ -59,12 +59,12 @@ export default function ContactPage() {
               >
                 {info.title}
                 {info.texts.map((text, idx) => (
-                  <p
+                  <small
                     key={idx}
                     className="text-sm text-grey-clr text-center lowercase"
                   >
                     {text}
-                  </p>
+                  </small>
                 ))}
               </p>
             ))}

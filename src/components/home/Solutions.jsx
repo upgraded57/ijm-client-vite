@@ -67,7 +67,7 @@ export default function Solutions() {
                 ))}
               </ul>
             </div>
-            <div className="basis-1/2 rounded-xl shadow-lg overflow-hidden aspect-[2/1.2] md:aspect-[4/3] max-w-[400px]">
+            <div className="basis-1/2 rounded-xl overflow-hidden aspect-[2/1.2] md:aspect-[4/3] w-full">
               <img
                 src={sol.image}
                 alt={sol.title}
