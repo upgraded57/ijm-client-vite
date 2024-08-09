@@ -57,7 +57,7 @@ export default function ContactPage() {
                 key={idx}
                 className="text-xl font-normal uppercase text-center mb-4"
               >
-                {info.title}
+                {info.title} <br />
                 {info.texts.map((text, idx) => (
                   <small
                     key={idx}
