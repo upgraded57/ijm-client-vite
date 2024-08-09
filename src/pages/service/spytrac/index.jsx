@@ -58,13 +58,18 @@ export default function Spytrac() {
     },
   ];
 
-  const testimonials = [
-    {
-      user: "John Doe",
-      text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt laboriosam impedit suscipit porro. Iste vel, neque aliquam eveniet culpa voluptatem.",
-      rating: [1, 2, 3, 4],
-    },
-  ];
+  const sendMail = () => {
+    var subject = encodeURIComponent("Spytrac enquiry");
+    var body = encodeURIComponent(
+      "Good day. I'll like to enquire about the pricing of Spytrac service. My name is ..."
+    );
+    window.location.href =
+      "mailto:Tech-support@ijmgloballimited.com?subject=" +
+      subject +
+      "&body=" +
+      body;
+  };
+
   return (
     <>
       <Nav />
@@ -180,8 +185,14 @@ export default function Spytrac() {
               There is a plan for every fleet size
             </h3>
             <p className="p-text text-balance">
-              Check out our product catalog here
+              Check out our product catalog by contacting a sales representative
             </p>
+            <button
+              onClick={sendMail}
+              className="btn rounded-full bg-green-clr mt-6 text-white hover:bg-green-clr hover:text-accent"
+            >
+              Contact Sales
+            </button>
           </div>
 
           {/* Table Here */}
@@ -198,15 +209,23 @@ export default function Spytrac() {
                 vehicle tracking needs
               </p>
 
-              <div className="flex flex-col md:flex-row-reverse items-center gap-4 md:gap-20 my-8">
+              <div className="flex flex-col md:flex-row-reverse items-center md:items-start gap-4 md:gap-20 my-8">
                 <div className="basis-4/5">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                  quis sed fugit error nemo vel aperiam pariatur cumque
-                  accusamus reprehenderit.
+                  <p className="p-text text-left">
+                    Best place for perfect tracking, flexible control and
+                    efficient management of your fleet. If you value your mobile
+                    properties like Boat, SUV, smart Car and construction
+                    equipments, you have to SPYTRAC them. Let SPYTRAC secure
+                    your home and offices with cameras, electronics locking
+                    systems and security alert system. Track your Children and
+                    your spouse in this Kidnapping Era. For more information on
+                    their various telematics security and care services just
+                    contact SPYTRAC!
+                  </p>
                 </div>
                 <div className="basis-1/5">
                   <div className="text-center md:text-left">
-                    <p className="font-semibold p-text">John Doe</p>
+                    <p className="font-semibold p-text">Ayodele Mustafa</p>
                     <span className="flex gap-2">
                       <FaStar className="text-yellow-500" />
                       <FaStar className="text-yellow-500" />
@@ -245,12 +264,14 @@ export default function Spytrac() {
                 <img src={offerImg} alt="Spytrac 360 degrees vehicle check" />
               </div>
               <p className="p-text mb-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Sign up to the spytrac premium tier package today and get a free
+                360 <sup>0</sup> check of your vehicle courtesy of Spytrac and
+                Autogig.
               </p>
-              <button className="btn rounded-full bg-green-clr text-white">
+              <button
+                onClick={sendMail}
+                className="btn rounded-full bg-green-clr text-white hover:bg-green-clr hover:text-accent"
+              >
                 Contact Sales
               </button>
             </div>

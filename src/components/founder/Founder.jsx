@@ -1,6 +1,6 @@
 import "../home/home.css";
 
-import founder_img from "@/src/assets/images/founder_img.webp";
+import founder_img from "@/src/assets/images/ijeoma-mary-chukwu.webp";
 
 export default function Founder() {
   // const founder_highlights = [

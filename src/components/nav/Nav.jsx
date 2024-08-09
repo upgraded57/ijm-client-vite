@@ -94,8 +94,8 @@ export default function Nav() {
 
         <div
           className={`navOptions absolute top-[80px] right-[4vw] ${
-            !navOpen ? "hidden" : "flex"
-          } items-stretch justify-center gap-4 flex-wrap max-w-screen-md px-10 py-4 backdrop-blur-md z-10 rounded-lg`}
+            !navOpen ? "hidden" : "grid"
+          } grid-cols-2 items-stretch justify-center gap-4 bg-white shadow-md p-4 z-10 rounded-lg`}
         >
           {navlinks.map(
             (link) =>
@@ -104,7 +104,7 @@ export default function Nav() {
                 <Link
                   key={idx}
                   to={path.path}
-                  className="px-10 py-4 bg-white rounded-md overflow-hidden flex items-center justify-center shadow-md w-full max-w-[180px]"
+                  className="px-10 py-4 bg-white rounded-md border-[1px] overflow-hidden flex items-center justify-center w-full max-w-[180px] hover:shadow-md transition-shadow"
                 >
                   <img src={path.image} alt={path.path} className="w-[100px]" />
                 </Link>

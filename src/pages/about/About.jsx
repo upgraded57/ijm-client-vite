@@ -9,7 +9,7 @@ import spystoreImg from "@/src/assets/images/spystoreimg.webp";
 import ProblemImg1 from "@/src/assets/images/HomeInsecurityImg.webp";
 import ProblemImg2 from "@/src/assets/images/CommunityInsecurityImg.webp";
 import ProblemImg3 from "@/src/assets/images/OrganizationalInsecurityImg.webp";
-import Person1Img from "@/src/assets/images/person1.webp";
+import Person1Img from "@/src/assets/images/ijeoma-mary.webp";
 import Person2Img from "@/src/assets/images/person2.webp";
 import Person3Img from "@/src/assets/images/person3.webp";
 import Person4Img from "@/src/assets/images/person4.webp";
