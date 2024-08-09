@@ -1,10 +1,29 @@
 import { IoIosCloseCircle } from "react-icons/io";
 
 export default function Waitlist({ setQ }) {
-  const joinWaitlist = (e) => {
+  const joinWaitlist = async (e) => {
     e.preventDefault();
-    alert("Your information has been saved. You will be contacted in due time");
+    alert("Your information will be saved. You will be contacted in due time");
+
     setQ("");
+
+    const data = new FormData(e.target);
+
+    try {
+      const res = await fetch(
+        "https://vettme-api.onrender.com/api/basic/waitlist",
+        {
+          method: "POST",
+          body: data,
+        }
+      );
+
+      const result = await res.json();
+
+      if (result) return alert("Your information has been saved.");
+    } catch (error) {
+      return alert("Your information could not be saved. Please retry");
+    }
   };
   return (
     <div className="w-full h-screen fixed inset-0 bg-black/20 px-[4vw] flex items-center justify-center backdrop-blur-sm">
@@ -49,7 +68,7 @@ export default function Waitlist({ setQ }) {
               type="phone"
               className="input input-bordered w-full"
               id="phone"
-              name="phone"
+              name="phone_number"
             />
           </label>
 
