@@ -7,14 +7,14 @@ export default function Waitlist({ setQ }) {
 
     setQ("");
 
-    const data = new FormData(e.target);
+    const data = Object.fromEntries(new FormData(e.target));
 
     try {
       const res = await fetch(
         "https://vettme-api.onrender.com/api/basic/waitlist",
         {
           method: "POST",
-          body: data,
+          body: JSON.stringify(data),
         }
       );
 
