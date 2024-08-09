@@ -43,13 +43,13 @@ export default function Solutions() {
     },
   ];
   return (
-    <section className="px-[4vw] mb-10 md:pb-10 pt-10  w-full max-w-screel-lg mx-auto">
+    <section className="px-[4vw] mb-10 md:pb-10 pt-10 w-full max-w-screen-lg mx-auto">
       <h1 className="h-text text-center uppercase md:mb-10">our solutions</h1>
       <div className="mx-auto w-full">
         {solutions.map((sol, idx) => (
           <div
             key={idx}
-            className={`flex flex-col-reverse md:flex-row md:items-center overflow-hidden gap-4 md:gap-10 mb-10 p-4 md:p-0 rounded-3xl shadow-lg md:shadow-none ${
+            className={`flex flex-col-reverse justify-center md:flex-row md:items-center overflow-hidden gap-4 md:gap-10 mb-10 p-4 md:p-0 rounded-3xl shadow-lg md:shadow-none ${
               sol.layout === "reverse" && "md:flex-row-reverse"
             }`}
           >
@@ -67,7 +67,7 @@ export default function Solutions() {
                 ))}
               </ul>
             </div>
-            <div className="basis-1/2 rounded-xl overflow-hidden aspect-[2/1.2] md:aspect-[4/3] w-full">
+            <div className="basis-1/2 rounded-xl mx-auto overflow-hidden aspect-[2/1.2] md:aspect-[4/3] w-full md:max-w-[400px]">
               <img
                 src={sol.image}
                 alt={sol.title}
