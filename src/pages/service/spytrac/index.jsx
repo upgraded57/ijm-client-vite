@@ -64,10 +64,7 @@ export default function Spytrac() {
       "Good day. I'll like to enquire about the pricing of Spytrac service. My name is ..."
     );
     window.location.href =
-      "mailto:Tech-support@ijmgloballimited.com?subject=" +
-      subject +
-      "&body=" +
-      body;
+      "mailto:sales@spytrac.ng?subject=" + subject + "&body=" + body;
   };
 
   return (

@@ -6,10 +6,7 @@ export default function ContactForm() {
     const subject = encodeURIComponent("IJM Global Limited Client Message");
     const body = encodeURIComponent(messageData.message);
     window.location.href =
-      "mailto:Tech-support@ijmgloballimited.com?subject=" +
-      subject +
-      "&body=" +
-      body;
+      "mailto:sales@spytrac.ng?subject=" + subject + "&body=" + body;
   };
 
   return (

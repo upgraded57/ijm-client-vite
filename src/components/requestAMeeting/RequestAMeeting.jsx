@@ -2,7 +2,9 @@ import "../home/home.css";
 
 export default function RequestAMeeting() {
   const openCalendly = () => {
-    Calendly.initPopupWidget({ url: "https://calendly.com/ijm-africa/30min" });
+    Calendly.initPopupWidget({
+      url: "https://calendly.com/sales-spytrac/ijm-global-limited-consulting",
+    });
     return false;
   };
   return (
