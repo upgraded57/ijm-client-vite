@@ -15,9 +15,9 @@ export default function Footer() {
       title: "Services",
       paths: [
         { path: "/service/spytrac", title: "Spytrac" },
-        { path: "/service/spystore", title: "Spystore" },
+        { path: "https://vettme.ng", title: "VettMe", target: "blank" },
+        { path: "https://spytrac.ng", title: "Spystore", target: "_blank" },
         { path: "/service/call4help", title: "Call4Help" },
-        { path: "/service/vettme", title: "VettMe" },
       ],
     },
     {
@@ -66,7 +66,11 @@ export default function Footer() {
                   <Link
                     key={idx}
                     to={path.path}
-                    target={footerLink.title === "Social" ? "_blank" : "_self"}
+                    target={
+                      footerLink.title === "Social" || path.target
+                        ? "_blank"
+                        : "_self"
+                    }
                     className="block p-text text-grey-clr mb-2 hover:underline max-w-max"
                   >
                     {path.title}

@@ -27,12 +27,14 @@ export default function Nav() {
           name: "Spytrac",
         },
         {
-          path: "/service/vettme",
+          path: "https://vettme.ng",
+          target: "_blank",
           image: vettme_logo,
           name: "Vettme",
         },
         {
-          path: "/service/spystore",
+          path: "https://spytrac.ng",
+          target: "_blank",
           image: spystore_logo,
           name: "Spystore",
         },
@@ -104,6 +106,7 @@ export default function Nav() {
                 <Link
                   key={idx}
                   to={path.path}
+                  target={path.target ? "_blank" : "_self"}
                   className="px-10 py-4 bg-white rounded-md border-[1px] overflow-hidden flex items-center justify-center w-full max-w-[180px] hover:shadow-md transition-shadow"
                 >
                   <img src={path.image} alt={path.path} className="w-[100px]" />
@@ -142,7 +145,12 @@ export default function Nav() {
                   <div className={`${mobileNav ? "block" : "hidden"} ml-10`}>
                     {link.subpaths &&
                       link.subpaths.map((path, idx) => (
-                        <Link to={path.path} key={idx} className="my-10 block">
+                        <Link
+                          to={path.path}
+                          key={idx}
+                          className="my-10 block"
+                          target={path.target ? "_blank" : "_self"}
+                        >
                           <img src={path.image} alt="" className="w-[80px]" />
                         </Link>
                       ))}
